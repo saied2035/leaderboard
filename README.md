@@ -58,7 +58,7 @@ for https:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AckonSamuel/leaderboard/issues).
+Feel free to check the [issues page](https://github.com/saied2035/leaderboard/issues).
 
 ## Show your support
 
