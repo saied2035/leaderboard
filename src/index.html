@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Leaderboard</title>
 </head>
 <body>
- <h1>Leaderboard</h1>
- <main id ="container">
+ <h1 class="ml3 f1">Leaderboard</h1>
+ <main id ="container" class="flex justify-around">
   <section id="scores-section">
-   <h2>Recent scores</h2>
-   <button type="button" id="scores-btn">Refresh</button>
+   <h2 class="mt0 di">Recent scores</h2>
+   <button class="ml3" type="button" id="scores-btn">Refresh</button>
    <div id="scores-container"></div>   
   </section> 
 
   <form id="score-form">
-   <input class="form-input" id="name" type="text" placeholder="Your name" />
-   <input class="form-input" id="score" type="text" placeholder="Your score" />    
+   <h2 class="mt0">Add your score</h2>
+   <input class="form-input db mb3" id="name" type="text" placeholder="Your name" required />
+   <input class="form-input db mb3" id="score" type="text" placeholder="Your score" required />
+   <button class="fr" type="submit" id="scores-btn">submit</button>    
   </form>       
  </main>
 </body>
