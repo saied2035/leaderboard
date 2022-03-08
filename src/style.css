@@ -1,0 +1,22 @@
+h1 {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border: 2px solid black;
+}
+
+#scores-container > li {
+  padding: 0.05rem 0.5rem;
+  border: 1px solid gray;
+}
+
+#scores-container > li:nth-child(even) {
+  background: #e7e9eb;
+}
+
+#scores-container > li:nth-child(odd) {
+  background: #fff;
+}
