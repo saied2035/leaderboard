@@ -9,7 +9,8 @@ ul {
   height: 60.5vh;
   overflow: hidden;
 }
-ul:hover{
+
+ul:hover {
   overflow: auto;
 }
 
