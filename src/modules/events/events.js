@@ -1,6 +1,13 @@
-import { updateLocalStorage } from '../functions/functions.js';
+import { updateLocalStorage, getLocalStorage } from '../functions/functions.js';
 
-const addScore = (event, scores) => {
+const addScore = (event) => {
+   let scores
+   if (!localStorage.scores) {
+      scores = []
+   }
+   else {
+     scores = getLocalStorage()
+   }
   const ul = document.querySelector('#scores-container');
   const name = document.querySelector('#name');
   const score = document.querySelector('#score');
