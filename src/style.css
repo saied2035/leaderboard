@@ -6,6 +6,12 @@ ul {
   list-style: none;
   padding: 0;
   border: 2px solid black;
+  max-height: 60.4vh;
+  overflow: hidden;
+}
+
+ul:hover {
+  overflow: auto;
 }
 
 #scores-container > li {
