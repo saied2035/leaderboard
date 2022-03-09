@@ -6,7 +6,7 @@ ul {
   list-style: none;
   padding: 0;
   border: 2px solid black;
-  height: 60.5vh;
+  max-height: 60.4vh;
   overflow: hidden;
 }
 
