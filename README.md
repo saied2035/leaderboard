@@ -7,7 +7,7 @@
 
  leaderboard module 2 week 4 :
 
-add scores to display it in a list.
+add scores to display it in a list using API.
 
 
 

@@ -9,7 +9,8 @@ document.querySelector('#score-form').addEventListener('submit', (event) => {
   addScore(event, game);
 });
 
-document.querySelector('#scores-btn-refresh').addEventListener('click', () => {
+document.querySelector('#scores-btn-refresh').addEventListener('click', (event) => {
+  event.preventDefault();
   showScores(game);
 });
 

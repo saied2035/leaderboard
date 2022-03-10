@@ -1,28 +1,96 @@
+
+@font-face {
+  font-family: 'Rexmone DEMO';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rexmone DEMO'), url('https://fonts.cdnfonts.com/s/75516/REXMONE-DEMO VERSION.woff') format('woff');
+}
+
+body {
+  background: #c7d5e0;
+  font-family: 'Rexmone DEMO', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 h1 {
-  margin: 0 auto;
+  margin: 1.5rem auto;
+  color: #171a21;
+  font-weight: 600;
+  background: linear-gradient(#171a21, #c7d5e0);
+  background-size: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: #171a21;
+  font-weight: 600;
+}
+
+#scores-btn-refresh,
+#scores-btn {
+  background: #dbdcdd;
+  color: #171a21;
+}
+
+.form-input {
+  padding: 0.25rem;
+}
+
+.form-input::placeholder {
+  font-size: 14px;
+}
+
+.form-input:focus {
+  background: #1b2838;
+  color: #fff;
+}
+
+.form-input:focus::placeholder {
+  color: #fff;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  border: 2px solid black;
-  max-height: 60.4vh;
-  overflow: hidden;
-}
-
-ul:hover {
-  overflow: auto;
+  margin: 0;
+  max-height: 64vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #scores-container > li {
+  display: flex;
+  align-items: center;
   padding: 0.05rem 0.5rem;
   border: 1px solid gray;
+  color: #c7d5e0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+#scores-container > li:hover {
+  border-radius: 8px;
 }
 
 #scores-container > li:nth-child(even) {
-  background: #e7e9eb;
+  background: #647993;
 }
 
 #scores-container > li:nth-child(odd) {
-  background: #fff;
+  background: #495776;
+}
+
+.score {
+  cursor: default;
+  color: #fff;
+}
+
+.special-record {
+  margin-left: auto;
 }

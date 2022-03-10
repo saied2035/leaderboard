@@ -1,6 +1,6 @@
 class Game {
   constructor() {
-    this.gameId = localStorage.gameId;
+    this.gameId = ' twQ5S0Xssg39YgMFCTQn';
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
     this.createGame();
   }
@@ -31,8 +31,17 @@ class Game {
   }
 
   async loadGameScores() {
+    const loadIcon = document.querySelector('#loading');
+    loadIcon.classList.remove('dn');
+    const ul = document.querySelector('#scores-container');
+    ul.innerHTML = '';
     const response = await fetch(`${this.url}/${this.gameId}/scores`)
-      .then((res) => res.json());
+      .then((res) => {
+        ul.innerHTML = '';
+        return res.json();
+      });
+
+    loadIcon.classList.add('dn');
     return response.result;
   }
 }
