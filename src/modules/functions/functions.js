@@ -1,9 +1,9 @@
 const showScores = async (game) => {
-  const scores = await game.loadGameScores();
-  if (!scores.length) return;
-
   const ul = document.querySelector('#scores-container');
   ul.innerHTML = '';
+  
+  const scores = await game.loadGameScores();
+  if (!scores.length) return;
 
   scores.sort((a, b) => b.score - a.score);
 
