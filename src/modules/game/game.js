@@ -1,13 +1,13 @@
 class Game {
   constructor() {
-    this.gameId = " twQ5S0Xssg39YgMFCTQn";
+    this.gameId = ' twQ5S0Xssg39YgMFCTQn';
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
     this.createGame();
   }
 
   async createGame() {
     if (this.gameId) return;
-      const response = await fetch(this.url, {
+    const response = await fetch(this.url, {
       method: 'POST',
       body: JSON.stringify({ name: 'saiedGame' }),
       headers: {
@@ -31,11 +31,11 @@ class Game {
   }
 
   async loadGameScores() {
-    const loadIcon = document.querySelector("#loading")
-    loadIcon.classList.remove('dn')
+    const loadIcon = document.querySelector('#loading');
+    loadIcon.classList.remove('dn');
     const response = await fetch(`${this.url}/${this.gameId}/scores`)
-    .then((res) => res.json());
-    loadIcon.classList.add('dn')
+      .then((res) => res.json());
+    loadIcon.classList.add('dn');
     return response.result;
   }
 }

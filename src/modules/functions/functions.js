@@ -1,7 +1,7 @@
 const showScores = async (game) => {
   const ul = document.querySelector('#scores-container');
   ul.innerHTML = '';
-  
+
   const scores = await game.loadGameScores();
   if (!scores.length) return;
 

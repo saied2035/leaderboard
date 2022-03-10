@@ -1,58 +1,61 @@
 
 @font-face {
-    font-family: 'Rexmone DEMO';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap ;
-    src: local('Rexmone DEMO'), url('https://fonts.cdnfonts.com/s/75516/REXMONE-DEMO VERSION.woff') format('woff');
+  font-family: 'Rexmone DEMO';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rexmone DEMO'), url('https://fonts.cdnfonts.com/s/75516/REXMONE-DEMO VERSION.woff') format('woff');
 }
+
 body {
   background: #c7d5e0;
   font-family: 'Rexmone DEMO', sans-serif;
-  font-display: swap;
 }
+
 h1 {
   margin: 1.5rem auto;
   color: #171a21;
   font-weight: 600;
   background: linear-gradient(#171a21, #c7d5e0);
   background-size: 50%;
-  background-clip: text ;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  -webkit-text-fill-color: transparent;
 }
+
 h2 {
   color: #171a21;
   font-weight: 600;
 }
-::-webkit-scrollbar {
 
-}
-#scores-btn-refresh, #scores-btn {
+#scores-btn-refresh,
+#scores-btn {
   background: #dbdcdd;
   color: #171a21;
 }
+
 .form-input {
   padding: 0.25rem;
 }
+
 .form-input::placeholder {
   font-size: 14px;
 }
+
 .form-input:focus {
   background: #1b2838;
   color: #fff;
 }
+
 .form-input:focus::placeholder {
   color: #fff;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 64vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 64vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #scores-container > li {
@@ -64,9 +67,11 @@ ul {
   font-weight: 600;
   margin: 0.3rem 0;
 }
+
 #scores-container > li:hover {
   border-radius: 8px;
 }
+
 #scores-container > li:nth-child(even) {
   background: #647993;
 }
@@ -79,4 +84,3 @@ ul {
   cursor: default;
   color: #fff;
 }
-
