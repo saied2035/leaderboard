@@ -1,6 +1,6 @@
 class Game {
   constructor() {
-    this.gameId = localStorage.gameId;
+    this.gameId = " twQ5S0Xssg39YgMFCTQn";
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
     this.createGame();
   }
