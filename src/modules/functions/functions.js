@@ -9,7 +9,7 @@ const showScores = async (game) => {
 
   scores.forEach((item) => {
     const li = document.createElement('li');
-    li.className = 'list-item';
+    li.className = 'list-item grow';
 
     const p = document.createElement('p');
     p.className = 'score';

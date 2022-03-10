@@ -1,28 +1,58 @@
+@import url('http://fonts.cdnfonts.com/css/rexmone-demo');
+body {
+  background: #c7d5e0;
+  font-family: 'Rexmone DEMO', sans-serif;
+}
 h1 {
-  margin: 0 auto;
+  margin: 1.5rem auto;
+  color: #171a21;
+  font-weight: 600;
+}
+h2 {
+  color: #171a21;
+  font-weight: 600;
+}
+::-webkit-scrollbar {
+
+}
+.form-input {
+  padding: 0.25rem;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  border: 2px solid black;
-  max-height: 60.4vh;
-  overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 64vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-
 ul:hover {
-  overflow: auto;
+   overflow-y: auto;
 }
 
 #scores-container > li {
   padding: 0.05rem 0.5rem;
   border: 1px solid gray;
+  color: #c7d5e0;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0.3rem 0;
 }
-
+#scores-container > li:hover {
+  border-radius: 8px;
+}
 #scores-container > li:nth-child(even) {
-  background: #e7e9eb;
+  background: #647993;
 }
 
 #scores-container > li:nth-child(odd) {
-  background: #fff;
+  background: #495776;
 }
+
+.score {
+  cursor: default;
+  color: #fff;
+}
+
