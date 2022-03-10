@@ -11,6 +11,10 @@ body {
   font-family: 'Rexmone DEMO', sans-serif;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 h1 {
   margin: 1.5rem auto;
   color: #171a21;
@@ -59,6 +63,8 @@ ul {
 }
 
 #scores-container > li {
+  display: flex;
+  align-items: center;
   padding: 0.05rem 0.5rem;
   border: 1px solid gray;
   color: #c7d5e0;
@@ -83,4 +89,8 @@ ul {
 .score {
   cursor: default;
   color: #fff;
+}
+
+.special-record {
+  margin-left: auto;
 }
