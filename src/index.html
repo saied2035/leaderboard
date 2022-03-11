@@ -18,8 +18,9 @@
 
   <form id="score-form">
    <h2 class="mt0">Add your score</h2>
-   <input class="form-input db mb3 br2 f5" id="name" type="text" placeholder="Your name" required />
-   <input class="form-input db mb3 br2 f5" id="score" type="number" placeholder="Your score" required />
+   <input class="form-input db mb3 br2 f5" id="name" maxlength="30" type="text" placeholder="Your name" required />
+   <input class="form-input db mb3 br2 f5" id="score" max="100000000000" min="1" type="number" 
+   placeholder="Your score" required />
    <button class="fr pa3 pt1 pb1 br2 f5 grow" type="submit" id="scores-btn" >submit</button>    
   </form>       
  </main>
