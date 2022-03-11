@@ -1,12 +1,11 @@
 class Game {
   constructor() {
-    this.gameId =  ' MYWOT0KtcN2l87dkj3u8';
+    this.gameId = ' MYWOT0KtcN2l87dkj3u8';
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
     this.createGame();
   }
 
   async createGame() {
-    console.log(this.gameId)
     if (this.gameId) return;
     const response = await fetch(this.url, {
       method: 'POST',
